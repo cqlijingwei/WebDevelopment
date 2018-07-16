@@ -12,17 +12,17 @@ a {
 }
 
 .page-banner {
-	position: absolute;
-    background-color: purple;
-    top: 0;
-    left: 0;
-    border: none;
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    font-size: 16px;
-    width:100%;
-    margin-top: 0;
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  left: 0;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  width:100%;
+  margin-top: 0;
 }
 
 .page-title {
@@ -44,13 +44,11 @@ p {
 
 nav {
   background-color: #FFF;
-  display: inline-block;
 }
 
 nav ul {
   list-style: none;
   float: left;
-  display: inline-block;
 }
 
 nav a {
@@ -60,26 +58,76 @@ nav a {
   text-decoration: none;
 }
 
-footer {
+#mySideButton a {
+  position: absolute;
+  right: -115px;
+  transition: 0.3s;
+  padding: 20px;
+  width: 200px;
+  text-decoration: none;
   font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySideButton a:hover {
+  right:-20px;
+}
+
+#p1 {
+  top: 250px;
+  background-color: #4CAF50;
+}
+
+#p2 {
+  top: 320px;
+  background-color: #2196F3;
+}
+
+#p3 {
+  top: 390px;
+  background-color: #f44336;
+}
+
+#p4 {
+  top: 460px;
+  background-color: #555
+}
+
+footer {
+  overflow: hidden;
   background: purple;
-  left: 0;
   bottom: 0;
   width: 100%;
-  height: 150px;
-  color: white;
-  padding: 0;
-  text-align: center;
+  height: 75px;
 }
 
 footer ul {
   list-style: none;
-  display: inline-block;
 }
 
 footer li {
-  display: inline;
   float: left;
+}
+
+footer li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+footer li a:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+footer li a.active {
+  background-color: #4CAF50;
+  color: black;
 }
 
 footer p {
