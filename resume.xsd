@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated from XSD/XML Schema Generator https://www.freeformatter.com/xsd-generator.html#ad-output -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="resume">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="header">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element name="address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="street"/>
+                    <xs:element type="xs:string" name="city"/>
+                    <xs:element type="xs:string" name="province"/>
+                    <xs:element type="xs:string" name="country"/>
+                    <xs:element type="xs:string" name="postalCode"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="contact">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:long" name="phone"/>
+                    <xs:element type="xs:string" name="email"/>
+                    <xs:element type="xs:anyURI" name="personalWeb"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="content">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="objective"/>
+              <xs:element name="skills">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="technical">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="dataTools"/>
+                          <xs:element type="xs:string" name="programming"/>
+                          <xs:element type="xs:string" name="operatingSystem"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="education">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="degree"/>
+                    <xs:element type="xs:string" name="university" maxOccurs="unbounded" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="work">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="job" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="title"/>
+                          <xs:element name="description">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="bullet" maxOccurs="unbounded" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
